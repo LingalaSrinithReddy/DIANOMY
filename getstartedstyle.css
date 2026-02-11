@@ -9,24 +9,57 @@ body{
 .navbar{
     width:95vw;
     height:7vh;
-    margin-top:2vh;
-    margin-bottom: 2vh;
-    margin-right: 2.5vw;
-    margin-left: 2vw;
-    background-color: lightgray;
+    translate: 2.5vw 2vh;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(100, 100, 100, 0.5);
     border-radius: 3.5vh;
-    opacity: 0.3;
+    opacity: 1;
+    backdrop-filter: blur(0.1rem);
+    -webkit-backdrop-filter: blur(0.1rem);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
     z-index: 10;
     position: sticky;
     top: 0;
+    background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.15)
+    );
+    display: flex;
 }
-.blur-circle {
-  width: 200px;
-  height: 200px;
-  background: #7f5af0;
-  border-radius: 50%;
-  filter: blur(40px);
-  opacity: 0.7;
-  translate: 25vw;
-  translate: 40vw -10vh;
+@font-face {
+  font-family: 'Lovelo';
+  src: url('/fonts/Lovelo-Black.woff2') format('woff2'),
+       url('/fonts/Lovelo-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.logo{
+    width:20%;
+    translate: 1.3vw  0.625vh;
+    height: 5.50vh;
+    border-radius: 2.875vh;
+    color: #ffffff;
+    font-family: Lovelo,sans-serif;
+    font-size: 5vh;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.logo a:active{
+    color: black;
+}
+.menu-btn {
+    translate: 72vw -0.25vh;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-btn:active{
+    color:black;
 }

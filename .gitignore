@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System / AI folders
+.gemini/
+.agent/
+.agents/
+.brain/
+
+# OS files
+Thumbs.db
